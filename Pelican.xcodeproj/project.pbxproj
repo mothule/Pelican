@@ -10,6 +10,8 @@
 		54B3A3B91E41748100BFE7BE /* Pelican.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54B3A3AF1E41748100BFE7BE /* Pelican.framework */; };
 		54B3A3BE1E41748100BFE7BE /* PelicanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B3A3BD1E41748100BFE7BE /* PelicanTests.swift */; };
 		54B3A3C01E41748100BFE7BE /* Pelican.h in Headers */ = {isa = PBXBuildFile; fileRef = 54B3A3B21E41748100BFE7BE /* Pelican.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		54B3A3E81E4176AD00BFE7BE /* Pelican.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B3A3E71E4176AD00BFE7BE /* Pelican.swift */; };
+		54B3A3E91E4176AD00BFE7BE /* Pelican.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B3A3E71E4176AD00BFE7BE /* Pelican.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -20,6 +22,13 @@
 			remoteGlobalIDString = 54B3A3AE1E41748100BFE7BE;
 			remoteInfo = Pelican;
 		};
+		54B3A3F51E41818000BFE7BE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 54B3A3F11E41818000BFE7BE /* Demo.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 54B3A3D21E41754200BFE7BE;
+			remoteInfo = Demo;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +38,9 @@
 		54B3A3B81E41748100BFE7BE /* PelicanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PelicanTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		54B3A3BD1E41748100BFE7BE /* PelicanTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PelicanTests.swift; sourceTree = "<group>"; };
 		54B3A3BF1E41748100BFE7BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54B3A3E71E4176AD00BFE7BE /* Pelican.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pelican.swift; sourceTree = "<group>"; };
+		54B3A3ED1E417FBF00BFE7BE /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; name = module.modulemap; path = CommonCrypto/module.modulemap; sourceTree = "<group>"; };
+		54B3A3F11E41818000BFE7BE /* Demo.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Demo.xcodeproj; path = Demo/Demo.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +65,8 @@
 		54B3A3A51E41748100BFE7BE = {
 			isa = PBXGroup;
 			children = (
+				54B3A3F11E41818000BFE7BE /* Demo.xcodeproj */,
+				54B3A3EC1E417FA400BFE7BE /* CommonCrypto */,
 				54B3A3B11E41748100BFE7BE /* Pelican */,
 				54B3A3BC1E41748100BFE7BE /* PelicanTests */,
 				54B3A3B01E41748100BFE7BE /* Products */,
@@ -73,6 +87,7 @@
 			children = (
 				54B3A3B21E41748100BFE7BE /* Pelican.h */,
 				54B3A3B31E41748100BFE7BE /* Info.plist */,
+				54B3A3E71E4176AD00BFE7BE /* Pelican.swift */,
 			);
 			path = Pelican;
 			sourceTree = "<group>";
@@ -84,6 +99,22 @@
 				54B3A3BF1E41748100BFE7BE /* Info.plist */,
 			);
 			path = PelicanTests;
+			sourceTree = "<group>";
+		};
+		54B3A3EC1E417FA400BFE7BE /* CommonCrypto */ = {
+			isa = PBXGroup;
+			children = (
+				54B3A3ED1E417FBF00BFE7BE /* module.modulemap */,
+			);
+			name = CommonCrypto;
+			sourceTree = "<group>";
+		};
+		54B3A3F21E41818000BFE7BE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				54B3A3F61E41818000BFE7BE /* Demo.app */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +179,7 @@
 				TargetAttributes = {
 					54B3A3AE1E41748100BFE7BE = {
 						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Manual;
 					};
 					54B3A3B71E41748100BFE7BE = {
@@ -167,6 +199,12 @@
 			mainGroup = 54B3A3A51E41748100BFE7BE;
 			productRefGroup = 54B3A3B01E41748100BFE7BE /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 54B3A3F21E41818000BFE7BE /* Products */;
+					ProjectRef = 54B3A3F11E41818000BFE7BE /* Demo.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				54B3A3AE1E41748100BFE7BE /* Pelican */,
@@ -174,6 +212,16 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		54B3A3F61E41818000BFE7BE /* Demo.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = Demo.app;
+			remoteRef = 54B3A3F51E41818000BFE7BE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		54B3A3AD1E41748100BFE7BE /* Resources */ = {
@@ -197,6 +245,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54B3A3E81E4176AD00BFE7BE /* Pelican.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,6 +253,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54B3A3E91E4176AD00BFE7BE /* Pelican.swift in Sources */,
 				54B3A3BE1E41748100BFE7BE /* PelicanTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -321,18 +371,23 @@
 		54B3A3C41E41748100BFE7BE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				HEADER_SEARCH_PATHS = "$(SDKROOT)/usr/include/CommonCrypt";
 				INFOPLIST_FILE = Pelican/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.mothule.Pelican;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_INCLUDE_PATHS = CommonCrypto;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -340,18 +395,22 @@
 		54B3A3C51E41748100BFE7BE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				HEADER_SEARCH_PATHS = "$(SDKROOT)/usr/include/CommonCrypt";
 				INFOPLIST_FILE = Pelican/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.mothule.Pelican;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_INCLUDE_PATHS = CommonCrypto;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -359,6 +418,7 @@
 		54B3A3C71E41748100BFE7BE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = BAH5C4U9W7;
 				INFOPLIST_FILE = PelicanTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -371,6 +431,7 @@
 		54B3A3C81E41748100BFE7BE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = BAH5C4U9W7;
 				INFOPLIST_FILE = PelicanTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

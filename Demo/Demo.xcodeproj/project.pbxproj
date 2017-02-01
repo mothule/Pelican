@@ -12,7 +12,26 @@
 		54B3A3DB1E41754200BFE7BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54B3A3D91E41754200BFE7BE /* Main.storyboard */; };
 		54B3A3DD1E41754200BFE7BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54B3A3DC1E41754200BFE7BE /* Assets.xcassets */; };
 		54B3A3E01E41754200BFE7BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54B3A3DE1E41754200BFE7BE /* LaunchScreen.storyboard */; };
+		54B3A3FF1E41823700BFE7BE /* Pelican.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54B3A3F71E4181A000BFE7BE /* Pelican.framework */; };
+		54B3A4001E41823700BFE7BE /* Pelican.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 54B3A3F71E4181A000BFE7BE /* Pelican.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		54B3A4041E418E6700BFE7BE /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B3A4021E418E6700BFE7BE /* TableViewCell.swift */; };
+		54B3A4051E418E6700BFE7BE /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54B3A4031E418E6700BFE7BE /* TableViewCell.xib */; };
+		54B3A4071E419DB100BFE7BE /* HogeLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B3A4061E419DB100BFE7BE /* HogeLogic.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		54B3A4011E41823700BFE7BE /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				54B3A4001E41823700BFE7BE /* Pelican.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		54B3A3D21E41754200BFE7BE /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,6 +41,11 @@
 		54B3A3DC1E41754200BFE7BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		54B3A3DF1E41754200BFE7BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		54B3A3E11E41754200BFE7BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54B3A3EF1E41802B00BFE7BE /* Pelican */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Pelican; path = ../Pelican; sourceTree = "<group>"; };
+		54B3A3F71E4181A000BFE7BE /* Pelican.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pelican.framework; path = "../../../../Library/Developer/Xcode/DerivedData/Pelican-cjqyogbvhiklnpgweqznwirlwscv/Build/Products/Debug-iphoneos/Pelican.framework"; sourceTree = "<group>"; };
+		54B3A4021E418E6700BFE7BE /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		54B3A4031E418E6700BFE7BE /* TableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		54B3A4061E419DB100BFE7BE /* HogeLogic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HogeLogic.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54B3A3FF1E41823700BFE7BE /* Pelican.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +65,7 @@
 			children = (
 				54B3A3D41E41754200BFE7BE /* Demo */,
 				54B3A3D31E41754200BFE7BE /* Products */,
+				54B3A3EE1E41802B00BFE7BE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +86,20 @@
 				54B3A3DC1E41754200BFE7BE /* Assets.xcassets */,
 				54B3A3DE1E41754200BFE7BE /* LaunchScreen.storyboard */,
 				54B3A3E11E41754200BFE7BE /* Info.plist */,
+				54B3A4021E418E6700BFE7BE /* TableViewCell.swift */,
+				54B3A4031E418E6700BFE7BE /* TableViewCell.xib */,
+				54B3A4061E419DB100BFE7BE /* HogeLogic.swift */,
 			);
 			path = Demo;
+			sourceTree = "<group>";
+		};
+		54B3A3EE1E41802B00BFE7BE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				54B3A3F71E4181A000BFE7BE /* Pelican.framework */,
+				54B3A3EF1E41802B00BFE7BE /* Pelican */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,6 +112,7 @@
 				54B3A3CE1E41754200BFE7BE /* Sources */,
 				54B3A3CF1E41754200BFE7BE /* Frameworks */,
 				54B3A3D01E41754200BFE7BE /* Resources */,
+				54B3A4011E41823700BFE7BE /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -124,6 +163,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				54B3A3E01E41754200BFE7BE /* LaunchScreen.storyboard in Resources */,
+				54B3A4051E418E6700BFE7BE /* TableViewCell.xib in Resources */,
 				54B3A3DD1E41754200BFE7BE /* Assets.xcassets in Resources */,
 				54B3A3DB1E41754200BFE7BE /* Main.storyboard in Resources */,
 			);
@@ -136,8 +176,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54B3A4041E418E6700BFE7BE /* TableViewCell.swift in Sources */,
 				54B3A3D81E41754200BFE7BE /* ViewController.swift in Sources */,
 				54B3A3D61E41754200BFE7BE /* AppDelegate.swift in Sources */,
+				54B3A4071E419DB100BFE7BE /* HogeLogic.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +300,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -271,6 +314,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

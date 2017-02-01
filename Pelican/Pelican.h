@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+//#import <CommonCrypto/CommonDigest.h>
 
 //! Project version number for Pelican.
 FOUNDATION_EXPORT double PelicanVersionNumber;
